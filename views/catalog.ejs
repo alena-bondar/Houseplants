@@ -1,0 +1,19 @@
+<%- include('header'); %>
+<main>
+    <script>
+        window.products = <%- JSON.stringify(products) %>;
+    </script>
+    <section class="products_catalog">
+        <% products.forEach(function(elem) { %>
+        <div class="catalog_item">
+            <p class="description_item"><%= elem.description %></p>
+            <img src="<%= elem.img %>" alt="img">
+            <p class="price"><%= elem.price %> грн</p>
+            <h4 class="name"><%= elem.name %></h4>
+            <button class="add_to_basket" data-id="<%= elem.id %>">В корзину</button>
+            <button class="show_description">Описание</button>
+        </div>
+        <% }); %>
+    </section>
+</main>
+<%- include('footer'); %>

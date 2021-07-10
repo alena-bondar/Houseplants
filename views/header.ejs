@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Houseplants</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+</head>
+<body>
+<header>
+    <div class="header_container">
+        <div class="header_logo"><a href="/"><i class="fa fa-pagelines" aria-hidden="true"></i></a></div>
+        <div class="header_menu">
+            <div class="menu_icon">
+                <hr>
+            </div>
+            <nav class="menu_body">
+                <ul class="list menu_list">
+                    <li><a href="/" data-goto=".about_us" class="menu_link">О нас</a></li>
+                    <li><a href="/" data-goto=".products" class="menu_link">Галерея</a></li>
+                    <li><a href="/" data-goto=".blog" class="menu_link">Блог</a></li>
+                    <li><a href="/" data-goto=".contacts" class="menu_link">Контакты</a></li>
+                    <li><a href="/catalog" class="menu_link go_to_shop" >Магазин</a></li>
+                    <li><a href="#" class="menu_link open_basket">Корзина <sup class="qty_basket"></sup></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="basket">
+            <i class="fa fa-times close_basket" aria-hidden="true"></i>
+            <div class="empty_basket">В корзине нет товаров</div>
+            <div class="basket_container"></div>
+            <div class="wrapper_total_cost">
+                <p>Итого:</p>
+                <div class="total_cost"></div>
+                <p>грн</p>
+            </div>
+            <div class="buttons">
+                <!--functional under development-->
+               <!--<button class="send_order">Отправить заказ</button>-->
+                <button class="clear_basket">Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+</header>
