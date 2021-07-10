@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ededed;
+  padding: 30px 30px 20px 30px;
+  margin-top: 18px;
+
+  .contacts, .social_networks {
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: column;
+    color: #4e4e4e;
+
+    a {
+      padding-top: 7px;
+      color: #4e4e4e;
+
+      i {
+        padding-right: 8px;
+
+      }
+    }
+  }
+}

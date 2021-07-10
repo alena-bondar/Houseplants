@@ -1,0 +1,140 @@
+.header_background {
+  background-image: url("../img/plant_5.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  @media (max-width: 768px) {
+    height: 47%;
+  }
+
+  .description {
+    max-width: 56%;
+    margin: 0 14px 0 14px;
+    line-height: 1.3;
+    position: relative;
+    top: 30%;
+    p:first-line {
+      line-height: 1.5;
+      font-weight: 700;
+      color: #4e4e4e;
+      font-size: 2rem;
+    }
+  }
+}
+
+.header_container {
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 58px;
+
+  .header_logo {
+    padding-left: 20px;
+    z-index: 25;
+    font-size: 36px;
+    i {
+      color: #00ab84;
+    }
+  }
+  .header_menu {
+    padding-right: 20px;
+  }
+
+  .list {
+    display: flex;
+
+    :first-child,
+    :last-child {
+      white-space: nowrap;
+    }
+
+    li {
+      border-right: 2px solid #000000;
+      padding: 0 27px 0 27px;
+
+      .menu_link {
+        color: #4e4e4e;
+      }
+    }
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .menu_icon {
+      z-index: 23;
+      position: relative;
+      display: block;
+      margin: 3px 0 0 4px;
+      width: 36px;
+      height: 20px;
+      border-top: 3px solid #000000;
+      border-bottom: 3px solid #000000;
+      cursor: pointer;
+
+      hr {
+        height: 3px;
+        background-color: #000000;
+        border: none;
+        margin-top: 8px;
+      }
+    }
+
+    .header_logo {
+      z-index: 23;
+    }
+    .menu_body {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: left 0.3s ease 0s;
+      overflow: auto;
+    }
+
+    .menu_body._active {
+      left: 0;
+      z-index: 20;
+    }
+
+    .header_container._active {
+      position: fixed;
+    }
+
+    .menu_body::before {
+      content: "";
+      width: 100%;
+      height: 60px;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      z-index: 5;
+
+    }
+    .list {
+      flex-flow: column;
+      align-items: center;
+      padding-top: 67px;
+
+      li {
+        border: none;
+        padding-top: 30px;
+        a {
+          color: #4e4e4e;
+        }
+      }
+    }
+    .menu_link {
+      font-size: 2rem !important;
+    }
+  }
+}
+

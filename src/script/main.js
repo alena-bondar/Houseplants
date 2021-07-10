@@ -1,0 +1,10 @@
+import './basket/add_to_basket';
+import './header/scroll_to_section';
+import './header/menu_icon';
+import './blog/blog';
+import './main/slider_products';
+import './catalog/show_description';
+import './basket/open_closed_basket';
+import './basket/add_to_basket';
+import './basket/quantity';
+import './basket/remove_from_basket';

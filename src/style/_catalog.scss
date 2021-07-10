@@ -1,0 +1,50 @@
+.products_catalog {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 54px 0 30px 0;
+  font-size: 1.2rem;
+
+  .catalog_item {
+    position: relative;
+    width: 350px;
+    margin-top: 51px;
+
+    img {
+      width: inherit;
+    }
+
+    .price {
+      padding: 7px 0 4px 0;
+      font-weight: 700;
+    }
+
+    .name {
+      padding-bottom: 7px;
+      font-weight: 700;
+    }
+
+    button {
+      font-size: 1.2rem;
+      width: 49%;
+      height: 32px;
+      cursor: pointer;
+      background-color: #00ab84;
+      border-radius: 6px;
+      padding-bottom: 3px;
+      color: #ffffff;
+
+    }
+  }
+
+  .description_item {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 81%;
+    padding: 10px;
+    line-height: 1.1;
+    transition: left 0.3s ease 0s;
+
+  }
+}
