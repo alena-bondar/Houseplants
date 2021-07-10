@@ -1,0 +1,28 @@
+.about_us_container {
+  display: flex;
+  flex-flow: wrap;
+  padding: 0 30px 30px 69px;
+  justify-content: space-between;
+  margin-bottom: 17px;
+
+  .block {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex: 0 1 48%;
+    padding-top: 30px;
+    @media (max-width: 776px) {
+      flex: 1 1 70%;
+      margin-left: -53px;
+    }
+
+    img {
+      height: 94px;
+    }
+
+    p {
+      padding-left: 21px;
+      letter-spacing: 1.3px;
+    }
+  }
+}
